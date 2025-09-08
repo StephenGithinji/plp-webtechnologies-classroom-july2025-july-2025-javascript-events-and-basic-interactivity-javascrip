@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Pages with JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Web Pages with JavaScript</h1>
+        <p>An assignment showcasing dynamic web features.</p>
+        <button id="theme-toggle">Toggle Dark Mode</button>
+    </header>
+
+    <main>
+        <!-- Part 1: JavaScript Event Handling -->
+        <section class="card">
+            <h2>Part 1: Event Handling</h2>
+            <div class="event-area">
+                <button id="click-btn">Click Me!</button>
+                <div id="hover-box">Hover Over Me</div>
+                <input type="text" id="key-input" placeholder="Type here...">
+            </div>
+            <p id="event-feedback">Event feedback will appear here.</p>
+        </section>
+
+        <!-- Part 2: Building Interactive Elements -->
+        <section class="card">
+            <h2>Part 2: Interactive Elements</h2>
+            
+            <!-- Interactive Counter -->
+            <div class="interactive-feature">
+                <h3>Simple Counter</h3>
+                <p>Value: <span id="counter-value">0</span></p>
+                <button id="increment-btn">+</button>
+                <button id="decrement-btn">-</button>
+            </div>
+
+            <!-- Collapsible FAQ Section -->
+            <div class="interactive-feature">
+                <h3>Collapsible FAQ</h3>
+                <div class="faq">
+                    <div class="faq-question">
+                        What is the DOM?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.
+                    </div>
+                </div>
+                 <div class="faq">
+                    <div class="faq-question">
+                        What is an event listener?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        An event listener is a procedure or function in a computer program that waits for an event to occur. Examples of events are user clicks, key presses, or mouse movements.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 3: Form Validation -->
+        <section class="card">
+            <h2>Part 3: Form Validation</h2>
+            <form id="signup-form" novalidate>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Min 5 characters">
+                    <small class="error-message"></small>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter a valid email">
+                    <small class="error-message"></small>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Min 8 characters">
+                    <small class="error-message"></small>
+                </div>
+                <div class="input-group">
+                    <label for="password-confirm">Confirm Password</label>
+                    <input type="password" id="password-confirm" name="password-confirm" placeholder="Passwords must match">
+                    <small class="error-message"></small>
+                </div>
+                <button type="submit">Register</button>
+                <p id="form-success-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
